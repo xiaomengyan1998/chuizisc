@@ -10,6 +10,7 @@ const gulp = require("gulp");
 const minifyCss= require("gulp-minify-css");
 const  scss = require("gulp-sass");
 const rename = require("gulp-rename");
+
 //index.scss=>index.css=>index.min.css
 gulp.task("scss",function(){
     return gulp.src("stylesheet/index.scss") 
@@ -20,14 +21,20 @@ gulp.task("scss",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload())
 })
-
-
+ 
 
 //批量处理
 gulp.task("scssAll",function(){
     return gulp.src("stylesheet/*.{scss,sass}")
     .pipe(scss())
     .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload())
+})
+
+//阿里图标库
+gulp.task("icon",function(){
+    return gulp.src("iconfont/**/*")
+    .pipe(gulp.dest("dist/iconfont"))
     .pipe(connect.reload())
 })
 
@@ -58,7 +65,7 @@ gulp.task("images",function(){
     .pipe(connect.reload())
 })
 //一次进行多个任务
-gulp.task("build",["copy-html","images","data","scssAll","scss","scripts"],function(){
+gulp.task("build",["copy-html","images","data","scssAll","scss","scripts","icon"  ],function(){
     console.log("建立成功");
 })
 
@@ -71,6 +78,8 @@ gulp.task("watch",function(){
      gulp.watch("stylesheet/index.scss",["scss"]);
      gulp.watch("stylesheet/*.{scss,sass}",["scssAll"]);
      gulp.watch(["*.js","!gulpfile.js"],["scripts"]);
+
+     gulp.watch("iconfont/**/*",["icon"])
 })
 //建立服务器
 const connect = require("gulp-connect");

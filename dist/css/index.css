@@ -1,0 +1,217 @@
+.headBox {
+  background: #262729; }
+
+.headBox .head {
+  width: 1290px;
+  height: 45px;
+  margin: 0 auto; }
+
+.headBox .head .im {
+  margin-top: 10px;
+  margin-right: 90px;
+  float: left; }
+
+.headBox .head .hed {
+  float: left;
+  width: 985px;
+  margin-top: 10px; }
+
+.headBox .head .hed li {
+  float: left; }
+
+.headBox .head .hed li a {
+  float: left;
+  display: block;
+  font-size: 12px;
+  color: #c0c0c0;
+  margin: 0px 18px 0px 18px;
+  line-height: 25px; }
+
+.headBox .head article {
+  float: right;
+  margin-top: 10px; }
+
+.headBox .head article .im1 {
+  margin: 0 24px 0 100px; }
+
+.sHead {
+  background: white; }
+  .sHead div {
+    width: 1220px;
+    height: 74px;
+    margin: 0 auto;
+    position: relative; }
+    .sHead div ul {
+      float: left; }
+      .sHead div ul li {
+        float: left; }
+        .sHead div ul li .a1 {
+          margin-left: 0;
+          font-weight: 800;
+          color: #4c4c4c; }
+        .sHead div ul li a {
+          margin: 0 15px 0 15px;
+          line-height: 74px;
+          font-size: 12px;
+          display: block;
+          color: #949494; }
+        .sHead div ul li .a2 {
+          margin-right: 115px; }
+    .sHead div form {
+      float: right;
+      width: 330px;
+      height: 38px;
+      position: relative;
+      margin-top: 18px;
+      margin-right: 3px; }
+      .sHead div form .inp {
+        width: 330px;
+        height: 38px;
+        border: 1px solid gray;
+        border-radius: 20px 20px; }
+      .sHead div form .iconfont {
+        position: absolute;
+        left: 12px;
+        top: 12px; }
+      .sHead div form .inp1 {
+        width: 80px;
+        height: 20px;
+        border: 1px solid #93b2f7;
+        border-radius: 15px 15px;
+        text-align: center;
+        color: #93b2f7;
+        position: absolute;
+        left: 140px;
+        top: 9px; }
+      .sHead div form .inp2 {
+        width: 70px;
+        height: 20px;
+        border: 1px solid  #8aad37;
+        border-radius: 15px 15px;
+        text-align: center;
+        font-size: 12px;
+        color: #8aad37;
+        position: absolute;
+        right: 8px;
+        top: 9px; }
+    .sHead div .xxk {
+      position: absolute;
+      left: 5px;
+      top: 50px; }
+
+.banBox {
+  background-color: #ececec; }
+  .banBox .banner {
+    width: 1220px;
+    height: 500px;
+    position: relative;
+    margin: 0px auto; }
+    .banBox .banner ul li {
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+      .banBox .banner ul li a img {
+        width: 100%;
+        height: 100%; }
+
+.sp section {
+  width: 1220px;
+  height: 202px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 5px 5px;
+  margin-bottom: 20px; }
+  .sp section a {
+    width: 305px;
+    background-color: gray;
+    float: left; }
+    .sp section a img {
+      width: 100%;
+      height: 100%; }
+
+.hodBox .hod {
+  width: 1220px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  border-radius: 5px 5px;
+  margin-bottom: 20px; }
+  .hodBox .hod section {
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    height: 60px;
+    width: 1220px; }
+    .hodBox .hod section h5 {
+      font-size: 18px;
+      color: #666;
+      margin-left: 26px;
+      line-height: 60px;
+      width: 100px;
+      float: left; }
+    .hodBox .hod section article {
+      float: right;
+      margin-top: 20px;
+      margin-right: 20px; }
+  .hodBox .hod aside {
+    text-align: center; }
+    .hodBox .hod aside dl {
+      float: left;
+      width: 304px;
+      height: 438px;
+      border-right: 1px solid gray; }
+    .hodBox .hod aside dt {
+      margin-top: 30px; }
+    .hodBox .hod aside .d1 {
+      font-size: 14px;
+      color: #333;
+      font-weight: 900;
+      margin: 5px 0; }
+    .hodBox .hod aside .d2 {
+      font-size: 14px;
+      color: #626262;
+      margin: 5px 0; }
+    .hodBox .hod aside .d3 {
+      font-size: 16px;
+      color: #d7574f;
+      font-weight: 900;
+      margin: 5px 0; }
+  .hodBox .hod #dd0 {
+    background-color: #fff; }
+  .hodBox .hod #dd1 {
+    background-color: #fff; }
+  .hodBox .hod #dd2 {
+    background-color: #fff; }
+  .hodBox .hod #dd3 {
+    background-color: #fff; }
+  .hodBox .hod #dd4 {
+    background-color: #fff; }
+
+.foot {
+  background-color: #fff; }
+  .foot section {
+    width: 1220px;
+    height: 190px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid gray; }
+    .foot section ul {
+      padding-top: 30px; }
+      .foot section ul li {
+        margin-right: 90px;
+        float: left; }
+        .foot section ul li h5 {
+          color: #646464; }
+        .foot section ul li div {
+          margin-top: 15px; }
+          .foot section ul li div a {
+            display: block;
+            line-height: 34px;
+            font-size: 14px;
+            color: #969696; }
+  .foot article {
+    width: 1220px;
+    height: 110px;
+    margin: 0 auto; }
+    .foot article p {
+      font-size: 14px;
+      color: #ababab; }
