@@ -1,0 +1,180 @@
+.headBox {
+  background: #262729; }
+
+.headBox .head {
+  width: 1290px;
+  height: 45px;
+  margin: 0 auto; }
+
+.headBox .head .im {
+  margin-top: 10px;
+  margin-right: 90px;
+  float: left; }
+
+.headBox .head .hed {
+  float: left;
+  width: 985px;
+  margin-top: 10px; }
+
+.headBox .head .hed li {
+  float: left; }
+
+.headBox .head .hed li a {
+  float: left;
+  display: block;
+  font-size: 12px;
+  color: #c0c0c0;
+  margin: 0px 18px 0px 18px;
+  line-height: 25px; }
+
+.headBox .head article {
+  float: right;
+  margin-top: 10px; }
+
+.headBox .head article .im1 {
+  margin: 0 24px 0 100px; }
+
+.sHead {
+  background: white; }
+  .sHead div {
+    width: 1220px;
+    height: 74px;
+    margin: 0 auto;
+    position: relative; }
+    .sHead div ul {
+      float: left; }
+      .sHead div ul li {
+        float: left; }
+        .sHead div ul li .a1 {
+          margin-left: 0;
+          font-weight: 800;
+          color: #4c4c4c; }
+        .sHead div ul li a {
+          margin: 0 15px 0 15px;
+          line-height: 74px;
+          font-size: 14px;
+          display: block;
+          color: #949494; }
+        .sHead div ul li .a2 {
+          margin-right: 115px; }
+    .sHead div form {
+      float: right;
+      width: 330px;
+      height: 38px;
+      position: relative;
+      margin-top: 18px;
+      margin-right: 3px; }
+      .sHead div form .inp {
+        width: 330px;
+        height: 38px;
+        border: 1px solid gray;
+        border-radius: 20px 20px;
+        outline: none; }
+      .sHead div form .iconfont {
+        position: absolute;
+        left: 12px;
+        top: 12px; }
+      .sHead div form .inp1 {
+        width: 80px;
+        height: 20px;
+        border: 1px solid #93b2f7;
+        border-radius: 15px 15px;
+        text-align: center;
+        color: #93b2f7;
+        position: absolute;
+        left: 140px;
+        top: 9px; }
+      .sHead div form .inp2 {
+        width: 70px;
+        height: 20px;
+        border: 1px solid  #8aad37;
+        border-radius: 15px 15px;
+        text-align: center;
+        font-size: 12px;
+        color: #8aad37;
+        position: absolute;
+        right: 8px;
+        top: 9px; }
+
+.ses {
+  background-color: #ededed; }
+  .ses .sesu {
+    width: 1220px;
+    height: 60px;
+    margin: 0 auto;
+    padding-left: 5px; }
+    .ses .sesu li {
+      float: left; }
+      .ses .sesu li a {
+        color: #666;
+        line-height: 60px;
+        font-size: 12px;
+        margin-right: 15px;
+        padding-left: 30px; }
+  .ses article {
+    width: 1220px;
+    height: 375px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #c2c2c2;
+    border-radius: 12px 12px; }
+    .ses article dl {
+      padding-left: 10px;
+      width: 243px;
+      height: 375px;
+      font-size: 14px;
+      border-right: 1px solid gray;
+      text-align: center;
+      border-color: #c2c2c2; }
+      .ses article dl dt {
+        width: 204px;
+        height: 204px; }
+        .ses article dl dt img {
+          width: 100%;
+          height: 100%;
+          padding: 14px 0  0 16px; }
+      .ses article dl .zi1 {
+        font-size: 14px;
+        font-weight: 900;
+        margin-top: 10px; }
+      .ses article dl .zi2 {
+        font-size: 12px;
+        color: #999;
+        margin: 10px 0; }
+      .ses article dl .btn a {
+        margin-right: 4px; }
+        .ses article dl .btn a img {
+          width: 14px;
+          height: 14px; }
+      .ses article dl p {
+        color: red;
+        margin-top: 15px;
+        font-weight: 800;
+        font-size: 16px; }
+  .ses dl {
+    float: left; }
+  .ses .foot {
+    background: #fff; }
+    .ses .foot section {
+      margin: 0 auto;
+      background-color: #fff;
+      margin-top: 30px; }
+      .ses .foot section ul {
+        width: 1220px;
+        height: 226px;
+        padding-top: 40px; }
+        .ses .foot section ul li {
+          float: left; }
+          .ses .foot section ul li a {
+            display: block;
+            padding-left: 10px; }
+  .ses aside {
+    width: 1220px;
+    height: 111px;
+    border-top: 1px solid #909090;
+    margin: 0 auto; }
+    .ses aside p {
+      padding-top: 20px;
+      color: #707070;
+      font-size: 14px;
+      line-height: 24px; }

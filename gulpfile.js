@@ -21,7 +21,17 @@ gulp.task("scss",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload())
 })
- 
+
+ //处理list.scss
+ gulp.task("listscss",function(){
+    return gulp.src("stylesheet/list.scss") 
+    .pipe(scss())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCss())
+    .pipe(rename("list.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload())
+})
 
 //批量处理
 gulp.task("scssAll",function(){
@@ -65,7 +75,7 @@ gulp.task("images",function(){
     .pipe(connect.reload())
 })
 //一次进行多个任务
-gulp.task("build",["copy-html","images","data","scssAll","scss","scripts","icon"  ],function(){
+gulp.task("build",["copy-html","images","data","scssAll","scss","scripts","icon" ,"listscss" ],function(){
     console.log("建立成功");
 })
 
@@ -78,8 +88,9 @@ gulp.task("watch",function(){
      gulp.watch("stylesheet/index.scss",["scss"]);
      gulp.watch("stylesheet/*.{scss,sass}",["scssAll"]);
      gulp.watch(["*.js","!gulpfile.js"],["scripts"]);
-
+    gulp.watch("stylesheet/list.scss",["listscss"])
      gulp.watch("iconfont/**/*",["icon"])
+
 })
 //建立服务器
 const connect = require("gulp-connect");
