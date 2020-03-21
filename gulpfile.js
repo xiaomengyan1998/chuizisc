@@ -55,6 +55,13 @@ gulp.task("scripts",function(){
     .pipe(connect.reload())
 })
 
+//处理php
+gulp.task("phps",function(){
+    return gulp.src("*.php" )
+    .pipe(gulp.dest("dist"))
+    .pipe(connect.reload())
+})
+
 //处理.html
 gulp.task("copy-html",function(){
     return gulp.src("*.html")
@@ -75,7 +82,7 @@ gulp.task("images",function(){
     .pipe(connect.reload())
 })
 //一次进行多个任务
-gulp.task("build",["copy-html","images","data","scssAll","scss","scripts","icon" ,"listscss" ],function(){
+gulp.task("build",["copy-html","images","data","scssAll","scss","scripts","icon" ,"listscss","phps" ],function(){
     console.log("建立成功");
 })
 
@@ -90,6 +97,7 @@ gulp.task("watch",function(){
      gulp.watch(["*.js","!gulpfile.js"],["scripts"]);
     gulp.watch("stylesheet/list.scss",["listscss"])
      gulp.watch("iconfont/**/*",["icon"])
+     gulp.watch("*.php",["phps"]);
 
 })
 //建立服务器

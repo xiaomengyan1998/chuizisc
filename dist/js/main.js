@@ -1,34 +1,43 @@
-console.log("加载成功");
-//1、配置要引入的.js模块的路径
+console.log("加载完成");
+/* 
+    配置当前项目引入的模块
+*/
 require.config({
     paths: {
         "jquery": "jquery-1.11.3",
         "jquery-cookie": "jquery.cookie",
-        "parabola": "parabola",  //抛物线方程不支持AMD规范
-        // "banner": "banner",
-        "shoping": "shoping"
+        "parabola": "parabola",
+        //引入banner图效果
+        "nav": "nav",
+        "slide": "slide",
+        "data": "data"
     },
     shim: {
-        //设置依赖关系
+        //设置依赖关系  先引入jquery.js  然后在隐去jquery-cookie
         "jquery-cookie": ["jquery"],
-        //某一个模块，不遵从AMD
+        //声明当前模块不遵从AMD
         "parabola": {
-            exports: "_"
-        }
-
+			exports: "_"
+		}
     }
 })
 
+require(["nav", "slide", "data"], function(nav, slide, data){
+    nav.download();
+    nav.banner();
+    nav.leftNavTab();
+    nav.topNavTab();
+    nav.searchTab();
 
-//<1>使用简单 <2>模块间的关系
-//2、引入模块，调用实现对应的功能
-require(["shoping"], function(shoping){
-    // banner.bannerTab();
+    // //加载商品数据 
+    slide.download();
+    // //添加商品数据滚动效果
+    slide.slideTab();
+    // //倒计时效果
+    slide.countDown();
 
+    // //主页数据加载
+    data.download();
+    data.tabMenu();
     
-    shoping.download();
-    shoping.addToCart();
-    shoping.rightCart();
-    shoping.rightCartEvent();
-    shoping.clearBtn();
 })

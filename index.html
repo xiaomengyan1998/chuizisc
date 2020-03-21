@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>锤子商城</title>
      <link rel="stylesheet" href=" css/index.min.css">
      <link rel="stylesheet" href=" css/rest.min.css">
      <link rel="stylesheet" href="iconfont/iconfont.css">
-      
+     <!-- <script src = 'js/require.js' defer async = 'true' data-main = 'js/main1.js'></script> -->
+     
+     <!-- 轮播图 -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">  
+     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+     <script src="https://unpkg.com/swiper/js/swiper.js"> </script>  
+     <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+         <style>
+         .swiper-container {
+         width: 1218px;
+         height:554px;
+        
+     }  .lbt{
+             width:100%;
+             height: 100%;
+         }
+         </style>
+         <script>
+             window.onload = function(){
+                 var oXxk = document.getElementById("xxk");
+                 var oXxk1 = document.getElementById("xxk1");
+                 var oPhone = document.getElementById("phone");
+                 var oBBao = document.getElementById("bBao");
+                 oPhone.onmouseenter = function(){
+                     oXxk.style.display = "block";
+                 }
+                 oXxk.onmouseleave = function(){
+                     oXxk.style.display = "none";
+                 }
+                 oBBao.onmouseenter = function(){
+                     oXxk1.style.display = "block";
+                 }
+                 oXxk1.onmouseleave = function(){
+                     oXxk1.style.display = "none";
+                 }
+
+             }
+         </script>
 </head>
 <body>
     <!-- //头部 -->
@@ -29,8 +66,8 @@
                <li><a href="">下载APP</a></li>
            </ul>
          <article>
-            <a href=""><img src="images/images/rx_03.png" alt="" class="im1"></a>
-            <a href=""><img src="images/images/rx_05.png" alt="" class="im2"></a>
+            <a href="register.html"><img src="images/images/rx_03.png" alt="" class="im1"></a>
+            <a href="shopping.html"><img src="images/images/rx_05.png" alt="" class="im2"></a>
          </article>
         </div>
     </div>
@@ -40,9 +77,9 @@
         <div>
             <ul>
                 <li><a href="" class="a1">首页</a></li>
-                <li><a href="">手机</a></li>
+                <li id="phone"><a href="list.html">手机</a></li>
                 <li><a href="">官方配件</a></li>
-                <li><a href="">服饰箱包</a></li>
+                <li id="bBao"><a href="">服饰箱包</a></li>
                 <li><a href="">畅呼吸</a></li>
                 <li><a href="">打印机</a></li>
                 <li><a href="">扫地机器人</a></li>
@@ -51,28 +88,63 @@
                 <li><a href="" class="a2">服务</a></li>
             </ul>
         
-        <form action="">
-            
-                <input type="text" class="inp">
-                <a href="" class="iconfont">&#xec4a;</a>
-                <input type="text" value="坚果pro"  class="inp1">
-                <input type="text" value="坚果新品" class="inp2">
-            
-        </form>
-        <section class="xxk">
-            <!-- <dl>
-                <dt>手机</dt>
-                <dd>
-                    <img src="images/images/sj.png" alt="">手机
-                </dd>
-            </dl> -->
-             
-        </section>
+            <form action="">
+                
+                    <input type="text" class="inp">
+                    <a href="" class="iconfont">&#xec4a;</a>
+                    <input type="text" value="坚果pro"  class="inp1">
+                    <input type="text" value="坚果新品" class="inp2">
+                
+            </form>
+            <!-- 下拉 -->
+            <section class="xxk" id="xxk">
+                <ul>
+                    <li>
+                        <img src="https://resource.smartisan.com/resource/f195e666e089d4e3775ce67d8e9523ce.png?x-oss-process=image/resize,w_126/format,webp" alt="">
+                        <h3>坚果Pro 3</h3>
+                        <h3>￥2399.00起</h3>
+                    </li>
+                    <li> <img src="https://resource.smartisan.com/resource/f195e666e089d4e3775ce67d8e9523ce.png?x-oss-process=image/resize,w_126/format,webp" alt="">
+                        <h3>坚果Pro 3</h3>
+                        <h3>￥2399.00起</h3></li>
+                    <li> <img src="https://resource.smartisan.com/resource/f195e666e089d4e3775ce67d8e9523ce.png?x-oss-process=image/resize,w_126/format,webp" alt="">
+                        <h3>坚果Pro 3</h3>
+                        <h3>￥2399.00起</h3></li>
+                </ul>
+                
+            </section>
+            <!-- 箱包 -->
+            <section class="xxk" id="xxk1">
+                <ul>
+                    
+                    <li> 
+                        <h5>服饰</h5>
+                       <p>
+                        <img src="https://resource.smartisan.com/resource/5e7c8e2681ff540cf445740533ba9743.png?x-oss-process=image/resize,w_40/format,webp" alt="">
+                        <span>衬衫</span>
+                       </p>
+                       <p> <img src="https://resource.smartisan.com/resource/7338b5424bdb6ffae1c6616b846f9d62.jpg?x-oss-process=image/resize,w_40/format,webp" alt="">
+                        
+                        <span>卫衣</span></li></p>
+                    <li> 
+                        <h5>箱包</h5>
+                       <!-- <p>
+                        <img src="https://resource.smartisan.com/resource/9960e83a55544fbf7b046013a6f7f414.jpg?x-oss-process=image/resize,w_40/format,webp" alt="">
+                        <span>拉杆箱</span>
+                       </p> -->
+                       <p>
+                        <img src="https://resource.smartisan.com/resource/cef4a5433eb95cbdf242d3c1bf5617f8.jpg?x-oss-process=image/resize,w_40/format,webp" alt="">
+                        
+                        <span>包</span></li>
+                       </p>
+                </ul>
+                
+            </section>
     </div>
     </div>
 
     <!-- 轮播图 -->
-    <div class="banBox">
+    <!-- <div class="banBox">
         <section class="banner">
             <ul>
                 <li>
@@ -82,7 +154,47 @@
                 </li>
             </ul>
             
-        </section>
+        </section> -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://resource.smartisan.com/resource/f3b90b1d6d9485a1dde8bed30577ed31.png?x-oss-process=image/resize,w_1220/quality,Q_100" alt="" class="lbt"></div>
+                <div class="swiper-slide"><img src="https://resource.smartisan.com/resource/2029ad937b253c42304c55043c2efc2f.png?x-oss-process=image/resize,w_1220/quality,Q_100" alt="" class="lbt"></div>
+                <div class="swiper-slide"><img src="https://resource.smartisan.com/resource/be7678a4216cc0e19f115a64ff4b0ecd.png?x-oss-process=image/resize,w_1220/quality,Q_100" alt="" class="lbt"></div>
+                <div class="swiper-slide"><img src="https://resource.smartisan.com/resource/4edfa2f25a2aff90f95411cb985cc7c4.png?x-oss-process=image/resize,w_1220/quality,Q_100" alt="" class="lbt"></div>
+                <div class="swiper-slide"><img src="https://resource.smartisan.com/resource/2ce9a9590cdfe31ca4a41cb62be59d58.png?x-oss-process=image/resize,w_1220/quality,Q_100" alt="" class="lbt"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+        <script>        
+            var mySwiper = new Swiper ('.swiper-container', {
+            //   direction: 'vertical', // 垂直切换选项
+              loop: true, // 循环模式选项
+              
+              // 如果需要分页器
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              
+            //   如果需要前进后退按钮
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              
+              // 如果需要滚动条
+            //   scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //   },
+            })        
+            </script>
    
     <!-- 商品列表 -->
     <div class="sp">

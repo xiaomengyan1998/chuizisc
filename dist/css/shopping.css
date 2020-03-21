@@ -1,0 +1,117 @@
+.headBox {
+  background: #262729; }
+
+.headBox .head {
+  width: 1290px;
+  height: 45px;
+  background: #262729;
+  margin: 0 auto; }
+
+.headBox .head .im {
+  margin-top: 10px;
+  margin-right: 90px;
+  float: left; }
+
+.headBox .head .hed {
+  float: left;
+  width: 985px;
+  margin-top: 10px; }
+
+.headBox .head .hed li {
+  float: left; }
+
+.headBox .head .hed li a {
+  float: left;
+  display: block;
+  font-size: 12px;
+  color: #c0c0c0;
+  margin: 0px 18px 0px 18px;
+  line-height: 25px; }
+
+.headBox .head article {
+  float: right;
+  margin-top: 10px; }
+
+.headBox .head article .im1 {
+  margin: 0 24px 0 100px; }
+
+.cotBox .cot {
+  width: 1220px;
+  height: 550px;
+  margin: 0 auto;
+  border: 1px solid #b9b9b9;
+  border-radius: 10px 10px;
+  margin: 30px auto; }
+  .cotBox .cot h3 {
+    width: 1100px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 30px; }
+  .cotBox .cot .cotT {
+    width: 1190px;
+    height: 38px;
+    margin-left: 30px;
+    border-top: 1px solid #a0a0a0;
+    border-bottom: 1px solid #9c9c9c; }
+    .cotBox .cot .cotT ul li {
+      float: left; }
+      .cotBox .cot .cotT ul li a {
+        line-height: 40px;
+        width: 137px;
+        height: 38px;
+        display: block; }
+      .cotBox .cot .cotT ul li #one {
+        margin-right: 500px; }
+  .cotBox .cot .cotS {
+    width: 1190px;
+    height: 110px;
+    margin-left: 30px;
+    border-bottom: 1px solid gray; }
+    .cotBox .cot .cotS input {
+      width: 20px;
+      height: 20px; }
+    .cotBox .cot .cotS img {
+      margin-top: 20px; }
+    .cotBox .cot .cotS .p1 {
+      font-size: 16px;
+      font-weight: 900;
+      margin-left: 20px; }
+    .cotBox .cot .cotS .p2 {
+      display: block;
+      margin-left: 125px;
+      font-size: 14px;
+      margin-top: -20px; }
+    .cotBox .cot .cotS .p3 {
+      float: right;
+      margin-right: 248px;
+      margin-top: -50px; }
+      .cotBox .cot .cotS .p3 span {
+        margin-right: 40px; }
+      .cotBox .cot .cotS .p3 .bt1 {
+        margin-right: 40px; }
+  .cotBox .cot .cotBo .cotB {
+    margin-left: 30px;
+    width: 1220px;
+    height: 110px;
+    line-height: 110px; }
+    .cotBox .cot .cotBo .cotB .s1 {
+      font-size: 16px;
+      font-weight: 900;
+      margin-right: 10px; }
+    .cotBox .cot .cotBo .cotB .s2 {
+      font-size: 14px;
+      margin-right: 350px; }
+    .cotBox .cot .cotBo .cotB .s3 {
+      font-size: 14px;
+      font-weight: 900;
+      margin-right: 20px; }
+    .cotBox .cot .cotBo .cotB .s4 {
+      font-size: 14px;
+      font-weight: 900;
+      margin-left: 20px; }
+    .cotBox .cot .cotBo .cotB .lj {
+      width: 100px;
+      height: 40px;
+      background-color: royalblue;
+      border-radius: 5px 5px;
+      margin-left: 90px; }

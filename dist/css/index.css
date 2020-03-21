@@ -97,9 +97,23 @@
         right: 8px;
         top: 9px; }
     .sHead div .xxk {
+      display: none;
       position: absolute;
       left: 5px;
-      top: 50px; }
+      top: 70px;
+      z-index: 2;
+      text-align: center;
+      background-color: white;
+      width: 100%;
+      height: 266px; }
+      .sHead div .xxk ul {
+        width: 600px;
+        margin-left: 400px;
+        margin-top: 40px; }
+        .sHead div .xxk ul li h3:last-child {
+          color: red; }
+      .sHead div .xxk .xxk1 ul {
+        margin-top: 30px; }
 
 .banBox {
   background-color: #ececec; }
@@ -156,37 +170,39 @@
       float: right;
       margin-top: 20px;
       margin-right: 20px; }
-  .hodBox .hod aside dl {
-    float: left;
-    width: 304px;
-    height: 438px;
+  .hodBox .hod aside {
     text-align: center;
     border-color: #c2c2c2; }
-    .hodBox .hod aside dl dt {
+    .hodBox .hod aside dl {
+      float: left;
+      width: 304px;
+      height: 438px;
+      border-right: 1px solid gray; }
+    .hodBox .hod aside dt {
       margin-top: 30px; }
-    .hodBox .hod aside dl .d1 {
+    .hodBox .hod aside .d1 {
       font-size: 14px;
       color: #333;
       font-weight: 900;
       margin: 5px 0; }
-    .hodBox .hod aside dl .d2 {
+    .hodBox .hod aside .d2 {
       font-size: 14px;
       color: #626262;
       margin: 5px 0; }
-    .hodBox .hod aside dl .d3 {
+    .hodBox .hod aside .d3 {
       font-size: 16px;
       color: #d7574f;
       font-weight: 900;
       margin: 5px 0; }
-  .hodBox .hod aside #dd0 {
+  .hodBox .hod #dd0 {
     background-color: #fff; }
-  .hodBox .hod aside #dd1 {
+  .hodBox .hod #dd1 {
     background-color: #fff; }
-  .hodBox .hod aside #dd2 {
+  .hodBox .hod #dd2 {
     background-color: #fff; }
-  .hodBox .hod aside #dd3 {
+  .hodBox .hod #dd3 {
     background-color: #fff; }
-  .hodBox .hod aside #dd4 {
+  .hodBox .hod #dd4 {
     background-color: #fff; }
 
 .foot {

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加购物车</title>
+    <link rel="stylesheet" href=" css/shopping.css">
+    <link rel="stylesheet" href=" css/rest.min.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script>
+        window.onload=function(){
+            var oRa=document.getElementById("radi")
+            var oCheck = document.getElementById("chek");
+            var oBt1 = document.getElementById("bt1");
+            var oSpn = document.getElementById("spa");
+            var oBt3 =document.getElementById("bt3");
+            var oTxt = oBt3.innerText;
+            var i = 1;
+            oBt1.onclick=function(){
+              
+                if(i>1){
+                    oSpn.innerText = --i;
+                    var oSz = parseFloat(oTxt.replace(",",""));
+                    oSz = String(oSz*i);
+                    var str1 = oSz.charAt(oSz.length - 7);
+                    oSz.replace("str1",str1 + ",");
+                    oBt3.innerText = oSz;
+
+                }else{
+                    alert("商品数不能小于1");
+                }
+
+            }
+
+            var oBt2 = document.getElementById("bt2");
+            oBt2.onclick=function(){
+                oSpn.innerText = ++i;
+                var oSz = parseFloat(oTxt.replace(",",""));
+                    oSz = String(oSz*i);
+                    var str1 = oSz.charAt(oSz.length - 7);
+                    oSz.replace("str1",str1 + ",");
+                    oBt3.innerText = oSz;
+            }
+
+            // 点击全选
+            var oCk = 1; 
+            oCheck.onclick=function(){
+                oCk++;
+               
+                if(oCk%2==0){
+                    oRa.checked="checked";
+                }else{
+                    oRa.checked="";
+                }
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+     <!-- //头部 -->
+     <div class="headBox">
+        <div class="head">
+          <a href=""> <img src="images/images/cz_03.png" alt="" class="im"></a>
+          
+           <ul class="hed">
+               <li><a href="">在线商城</a></li>
+               <li><a href="">坚果 Pro 3</a></li>
+               <li><a href="">坚果Pro 2S</a></li>
+               <li><a href="">坚果TNT工作站</a></li>
+               <li><a href="">Smartisan OS</a></li>
+               <li><a href="">欢喜云</a></li>
+               <li><a href="">应用</a></li>
+               <li><a href="">论坛</a></li>
+               <li><a href="">荣誉与奖项</a></li>
+               <li><a href="">加入我们</a></li>
+               <li><a href="">下载APP</a></li>
+           </ul>
+         <article>
+            <a href="register.html"><img src="images/images/rx_03.png" alt="" class="im1"></a>
+         </article>
+        </div>
+    </div>
+    <!-- 购物车界面 -->
+   <div class="cotBox">
+    <div class="cot">
+        <!--1  -->
+        <h3>购物清单</h3>
+        <!-- 2 -->
+        <article class="cotT">
+            <ul>
+                <li><a href="" id="one">商品信息</a></li>
+                <li><a href="">单价</a></li>
+                <li><a href="">数量</a></li>
+                <!-- <li><a href="">小计</a></li> -->
+                <li><a href="">操作</a></li>
+            </ul>
+        </article>
+        <!-- 3 -->
+        <section class="cotS">
+            <input type="radio" name="dx" id="radi">
+            <!-- <input type="radio" name="dx"> -->
+            <!-- <button >v</button> -->
+            <img src="images/images/cot.png" alt="">
+            <span class="p1"> 坚果Pro 3 </span> 
+            <span class="p2">黑色| 8G+ 128GB</span>
+            <aside class="p3">
+                <span class="p4" >￥<span >2,899.00</span></span>
+                <button class="bt1" id="bt1">-</button>
+                <span id="spa">1</span>
+                <button class="bt2" id="bt2">+</button>
+                
+            </aside> 
+            <!-- <aside class="p5">
+                <button class="bt3">x</button>
+            </aside> -->
+        </section>
+        <!-- 4 -->
+        <div class="cotBo">
+            <section class="cotB">
+               <article>
+                <input type="checkbox" id="chek">
+                <span class="s1">全选 </span> |
+                <span class="s2">删除选中的商品</span>
+                <span class="s3"> 已选择1件商品</span>|
+                <span class="s4" > 应付总领:￥<span id="bt3"> 2,899.00</span></span>
+                <!-- 按钮 -->
+               <button class="lj">立即结算</button>
+                </article>
+            </section>
+        </div>
+    </div>
+   </div>
+</body>
+</html>

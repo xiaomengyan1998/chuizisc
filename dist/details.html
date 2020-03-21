@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=" css/detail.css">
+    <link rel="stylesheet" href=" css/rest.min.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/detail.js"></script>
+    
+</head>
+    <style>
+        
+        #adp{
+            display: none;
+            width: 100px;
+            height: 40px;
+            background-color: rgb(230, 112, 69);
+            position: absolute;
+            left: 580px;
+            bottom: 50px;
+            font-size: 12px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 5px 5px;
+        }
+    </style>
+<body>
+     <!-- //头部 -->
+     <div class="headBox">
+        <div class="head">
+          <a href=""> <img src="images/images/cz_03.png" alt="" class="im"></a>
+          
+           <ul class="hed">
+               <li><a href="">在线商城</a></li>
+               <li><a href="">坚果 Pro 3</a></li>
+               <li><a href="">坚果Pro 2S</a></li>
+               <li><a href="">坚果TNT工作站</a></li>
+               <li><a href="">Smartisan OS</a></li>
+               <li><a href="">欢喜云</a></li>
+               <li><a href="">应用</a></li>
+               <li><a href="">论坛</a></li>
+               <li><a href="">荣誉与奖项</a></li>
+               <li><a href="">加入我们</a></li>
+               <li><a href="">下载APP</a></li>
+           </ul>
+         <article>
+            <a href="register.html"><img src="images/images/rx_03.png" alt="" class="im1"></a>
+            <a href="shopping.html"><img src="images/images/rx_05.png" alt="" class="im2"></a>
+         </article>
+        </div>
+    </div>
+    <!-- 小导航 -->
+    <div class="se1">
+        <section >
+            <ul>
+                <li><a href="">概览</a></li>
+                <li><a href="">设计</a></li>
+                <li><a href="">功能</a></li>
+                <li><a href="">摄影</a></li>
+                <li><a href="">操作系统</a></li>
+                <li><a href="">技术规格</a></li>
+            </ul>
+        </section>
+    </div>
+    <!-- 手机详情内容 放大镜-->
+    <div class="se2">
+        <!-- <img src="images/images/xq.webp" alt="" class="im"> -->
+       <div class="im">
+        <div id = 'small'>
+            <img src="images/images/xq.webp" alt="">
+            <div id = 'mark'></div>
+        </div>
+        <div id = 'big'>
+            <img src="images/images/xq.webp" alt="">
+        </div>
+       </div>
+        <section class="ir">
+            <!-- 一 -->
+            <article>
+                <h1>坚果Pro 3 </h1>
+                <h2>高通骁龙”“855h2lus. 4800 万模范四摄Smartianos7.0</h2>
+            </article>
+            <!-- 二 -->
+            <article>
+                <span>促销活动</span>
+                <aside>
+                <a href=""><span>直降</span> (坚果礼遇)坚果Pro 3限时大促</a>
+                <a href=""><span>加购</span>(坚果礼遇)购坚果Pro 3手机加99元得颈挂蓝牙耳机!</a>
+                <a href=""><span>领券</span> 100元坚果Pro 3优惠券现在领取</a>
+                </aside>
+            </article>
+            <!-- 三 -->
+            <article class="ar3">
+                <span>颜色选择</span> 
+                <ul> 
+                    <li> 
+                          <a href="">
+                            <img src="images/images/hbn.png" alt="" class="im0">  黑色
+                        </a>  
+                        
+                    </li>
+                    <li>
+                         <a href="">
+                            <img src="images/images/hbn1.png" alt="" class="im0">    
+                            白色
+                         </a>
+                    </li>
+                    <li>
+                       <a href=""> <img src="images/images/hbn.png" alt="" class="im0">   
+                        松绿色</a>
+                    </li>
+                </ul>
+            </article>
+            <!-- 4个 --> 
+            <article class="ar4">
+                <span class="ss">服务说明</span>
+                <a href="" class="aa">*满99元包邮</a>
+            </article>  
+        </section>
+    </div>
+    <!--定位fixd -->
+    <div class="pot">
+        <section class="pl">
+            <a href="" class="al1">您已选择了       </a>
+            <a href="" class="al2">坚果 Pro3</a>
+            <a href="" class="al3">￥ 2,399.00</a>
+        </section>
+        <section class="pr">
+            <a href="" class="ar">￥ 2,399.00</a>
+              <a href="">现在购买</a> 
+             <a href="" id="ap">加入购物车</a> 
+        </section>
+    </div>
+    <!-- 添加 购物车弹框 -->
+    <div id="adp">
+        <span>已添加至购物车</span>
+    </div>
+</body>
+    <script >
+        window.onload=function(){
+            var oA1 = document.getElementById("ap");
+            var oAdp = document.getElementById("adp");
+            oA1.onclick=function(ev){
+                ev.preventDefault();
+                // alert("ak");
+                oAdp.style.display="block";
+               //延时器
+                setTimeout(function(){
+                    oAdp.style.display="none";
+                },6000)
+            }
+        }
+        </script>
+</html>
